@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    width: 100vw;
+    height: auto;
+    background-image: url(../img/sara-kurfess-7y-Fr59_MmI-unsplash.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+form {
+  width: 30%;
+  height: auto;
+  margin: 15vh auto;
+  background-color:rgba(155, 153, 153, 0.3);
+  padding: 1vw;
+}
+
+input {
+  width: 100%;
+  height: 3vh;
+  padding: 0.5vh;
+}
+
+select {
+  margin-right: 2vh;
+  height: 3vh;
+  width: 80%;
+  text-align: center;
+}
+
+.labelrow {
+  margin: 2vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#gender{
+    width: 100%;
+}
+
+.dropDowns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.pass-success {
+    padding: 10px;
+    background-color: rgb(172, 224, 172);
+}
+
+.msg{
+    display: flex;
+    justify-content: center;
+    font-size: 200%;
+}
+
+input:valid, select:valid { 
+    border: 2px solid green;
+}
+
+/* Prevents the button from getting a green border */
+.submitBtn:valid{
+    border: black;
+}

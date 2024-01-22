@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="javascript/script.js" defer></script>
+  </head>
+  <body>
+    <form id="create-account">
+      <label class="labelrow">
+        First Name:
+        <input
+          type="text"
+          name="firstName"
+          required
+          minlength="2"
+          maxlength="20"
+        />
+      </label>
+      <label class="labelrow">
+        Last Name:
+        <input
+          type="text"
+          name="firstName"
+          required
+          minlength="2"
+          maxlength="25"
+        />
+      </label>
+
+      <label class="labelrow"
+        >Gender:
+        <select id="gender" name="gender">
+          <!-- Options will be added here dynamically -->
+        </select>
+      </label>
+      <div class="dropDowns">
+        <label
+          >Date:
+          <select class="selectBirthday" id="date" name="date">
+            <!-- Options will be added here dynamically -->
+          </select>
+        </label>
+        <label
+          >Month:
+          <select class="selectBirthday" id="month" name="month">
+            <!-- Options will be added here dynamically -->
+          </select>
+        </label>
+        <label
+          >Year:
+          <select class="selectBirthday" id="year" name="year"></select>
+        </label>
+      </div>
+      <label class="labelrow"
+        >Email:
+        <input
+          type="text"
+          name="email"
+          required
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+        />
+      </label>
+      <div class="passwords">
+        <label class="labelrow"
+          >Password:
+          <input type="password" name="password" required />
+        </label>
+        <label class="labelrow"
+          >Repeat Password:
+          <input type="password" name="passwordRepeat" required />
+        </label>
+      </div>
+      <input
+        type="submit"
+        class="submitBtn"
+        name="submit"
+        value="Create Account"
+      />
+    </form>
+    <div class="msg"></div>
+  </body>
+</html>
